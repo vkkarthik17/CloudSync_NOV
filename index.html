@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CloudSync</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- AOS Library CSS for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Swiper.js CSS for carousel -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">CloudSync</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <i class="fas fa-bars open-icon"></i>
+      <i class="fas fa-times close-icon"></i>
+    </label>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Our Services</a></li>
+      <li><a href="#expertise">Our Expertise</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <!-- Left side particles (Pink) -->
+    <div id="particles-left"></div>
+
+    <!-- Right side particles (Blue) -->
+    <div id="particles-right"></div>
+
+    <div class="hero-content">
+      <h2 class="hero-heading">Welcome to CloudSync</h2>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Crafting Seamless SAP and Tech Solutions for Your Success.
+      </p>
+      <a href="#services" class="btn" data-aos="fade-up" data-aos-delay="400">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2 data-aos="fade-up">Our Services</h2>
+    <div id="wrapper" data-aos="fade-up" data-aos-delay="200">
+      <div class="slider">
+        <!-- Custom Previous and Next Buttons -->
+        <div class="slider__prev"></div>
+        <div class="slider__next"></div>
+        <!-- Swiper Container -->
+        <div class="swiper my-swiper">
+          <div class="swiper-wrapper">
+            <!-- Service Slide 1 -->
+            <div class="swiper-slide">
+              <div class="service-card">
+                <div class="card-image">
+                  <img src="images/Integrationbanner.jpg" alt="Cloud Integration">
+                </div>
+                <div class="card-content">
+                  <h3>Cloud Integration</h3>
+                  <p>Seamlessly integrate multiple cloud platforms into one unified system.</p>
+                </div>
+              </div>
+            </div>
+           
+             <!-- Service Slide 2 -->
+             <div class="swiper-slide">
+              <div class="service-card">
+                <div class="card-image">
+                  <img src="images/Analyticsbanner.jpg" alt="SAP Implementations & Rollouts">
+                </div>
+                <div class="card-content">
+                  <h3>SAP Implementations & Rollouts</h3>
+                  <p>SAP AMS, Resource Outsourcing, SAP Enhancement and Integration Services, S4HANA Migrations.</p>
+                </div>
+              </div>
+            </div>
+             <!-- Service Slide 2 -->
+             <div class="swiper-slide">
+              <div class="service-card">
+                <div class="card-image">
+                  <img src="images/Analyticsbanner.jpg" alt="SAP Implementations & Rollouts">
+                </div>
+                <div class="card-content">
+                  <h3>SAP Implementations & Rollouts</h3>
+                  <p>SAP AMS, Resource Outsourcing, SAP Enhancement and Integration Services, S4HANA Migrations.</p>
+                </div>
+              </div>
+            </div>
+             <!-- Service Slide 2 -->
+             <div class="swiper-slide">
+              <div class="service-card">
+                <div class="card-image">
+                  <img src="images/Analyticsbanner.jpg" alt="SAP Implementations & Rollouts">
+                </div>
+                <div class="card-content">
+                  <h3>SAP Implementations & Rollouts</h3>
+                  <p>SAP AMS, Resource Outsourcing, SAP Enhancement and Integration Services, S4HANA Migrations.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Expertise Section -->
+  <section id="expertise" class="expertise-section">
+    <h2 data-aos="fade-up">Our Expertise</h2>
+    <!-- Tabs for Technical and Functional Expertise -->
+    <div class="tabs-container" data-aos="fade-up" data-aos-delay="200">
+      <ul class="tabs">
+        <li class="tab-link current" data-tab="technical">Technical Expertise</li>
+        <li class="tab-link" data-tab="functional">Functional Expertise</li>
+      </ul>
+      <!-- Technical Expertise Content -->
+      <div id="technical" class="tab-content current">
+        <div class="expertise-cards">
+          <!-- Card 1 -->
+          <div class="expertise-card" data-aos="zoom-in">
+            <div class="card-content">
+              <i class="fas fa-code"></i>
+              <h3>SAP ABAP</h3>
+              <p>Advanced Business Application Programming for SAP custom development.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="expertise-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card-content">
+              <i class="fas fa-cloud"></i>
+              <h3>SAP Cloud Integration/PI/PO</h3>
+              <p>Integration of SAP systems using Process Integration and Process Orchestration.</p>
+            </div>
+          </div>
+          <!-- Add more expertise cards as needed -->
+        </div>
+      </div>
+      <!-- Functional Expertise Content -->
+      <div id="functional" class="tab-content">
+        <div class="expertise-cards">
+          <!-- Card 1 -->
+          <div class="expertise-card" data-aos="zoom-in">
+            <div class="card-content">
+              <i class="fas fa-user-tie"></i>
+              <h3>SAP (HR) & Payroll Management</h3>
+              <p>Comprehensive HR solutions including payroll, time management, and personnel administration.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="expertise-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card-content">
+              <i class="fas fa-calculator"></i>
+              <h3>SAP Finance and Controlling (FICO)</h3>
+              <p>Financial accounting and controlling solutions for effective financial management.</p>
+            </div>
+          </div>
+          <!-- Add more expertise cards as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="section-divider" data-aos="fade-up"></div>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-content" data-aos="fade-right">
+        <h2 class="about-heading">About <span>Us</span></h2>
+        <p class="about-description">
+          Cloud Sync is a leading SAP consultancy firm specializing in SAP Cloud Platform Integration (CPI), migrations, cloud connectors, and more. We empower businesses by delivering innovative SAP solutions that streamline processes and enhance operational efficiency.
+          <br><br>
+          Our team of certified SAP experts is dedicated to providing tailored services that meet your unique business needs. From integrating cloud and on-premise applications to migrating legacy systems, we help you navigate your digital transformation journey with confidence.
+        </p>
+      </div>
+      <div class="about-image" data-aos="fade-left">
+        <div class="image-wrapper">
+          <img src="images/corporatebg2.jpeg" alt="About Us">
+        </div>
+      </div>
+    </div>
+    <!-- Parallax Background -->
+    <div class="parallax" id="parallax-about"></div>
+  </section>
+
+  <!-- Divider -->
+  <div class="section-divider" data-aos="fade-up"></div>
+
+  <!-- Industries We Serve Section -->
+  <section id="industries" class="industries-section">
+    <h2 data-aos="fade-up">Industries We Serve</h2>
+    <div class="industries-grid" data-aos="fade-up" data-aos-delay="100">
+      <!-- Industry Card 1 -->
+      <div class="industry-card" data-aos="zoom-in">
+        <div
+          class="background-image"
+          style="background-image: url('images/Retail2.jpeg');"
+        ></div>
+        <div class="overlay">
+          <h3>Retail</h3>
+        </div>
+      </div>
+      <!-- Industry Card 2 -->
+      <div class="industry-card" data-aos="zoom-in" data-aos-delay="50">
+        <div
+          class="background-image"
+          style="background-image: url('images/FMCG.jpeg');"
+        ></div>
+        <div class="overlay">
+          <h3>FMCG</h3>
+        </div>
+      </div>
+      <!-- Industry Card 3 -->
+      <div class="industry-card" data-aos="zoom-in" data-aos-delay="50">
+        <div
+          class="background-image"
+          style="background-image: url('images/Manufacturing.jpeg');"
+        ></div>
+        <div class="overlay">
+          <h3>Manufacturing</h3>
+        </div>
+      </div>
+      <!-- Industry Card 4 -->
+      <div class="industry-card" data-aos="zoom-in" data-aos-delay="50">
+        <div
+          class="background-image"
+          style="background-image: url('images/automotive2.jpeg');"
+        ></div>
+        <div class="overlay">
+          <h3>AutoMobiles</h3>
+        </div>
+      </div>
+      <!-- Industry Card 5 -->
+      <div class="industry-card" data-aos="zoom-in" data-aos-delay="50">
+        <div
+          class="background-image"
+          style="background-image: url('images/Pharma.jpeg');"
+        ></div>
+        <div class="overlay">
+          <h3>Pharma</h3>
+        </div>
+      </div>
+      <!-- Industry Card 6 -->
+      <div class="industry-card" data-aos="zoom-in" data-aos-delay="50">
+        <div
+          class="background-image"
+          style="background-image: url('images/TeleCom.jpeg');"
+        ></div>
+        <div class="overlay">
+          <h3>Telecom</h3>
+        </div>
+      </div>
+      <!-- Industry Card 7 -->
+      <div class="industry-card" data-aos="zoom-in" data-aos-delay="50">
+        <div
+          class="background-image"
+          style="background-image: url('images/oilandgas3.jpeg');"
+        ></div>
+        <div class="overlay">
+          <h3>Oil&GAS</h3>
+        </div>
+      </div>
+      <!-- Add more industry cards as needed -->
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section id="clients">
+    <h2 data-aos="fade-up">Our Clients</h2>
+    <div class="clients-container" data-aos="fade-up" data-aos-delay="200">
+      <!-- Client Testimonial 1 -->
+      <div class="client-testimonial" data-aos="fade-up" data-aos-delay="300">
+        <p>"CloudSync transformed our operations with their seamless SAP integration."</p>
+        <h4>- John Doe, CEO of RetailCorp</h4>
+      </div>
+      <!-- Client Testimonial 2 -->
+      <div class="client-testimonial" data-aos="fade-up" data-aos-delay="400">
+        <p>"Their expertise in cloud migrations is unparalleled."</p>
+        <h4>- Jane Smith, CTO of FMCG Inc.</h4>
+      </div>
+      <!-- Add more testimonials as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-header" data-aos="fade-up">
+        <h2>How Can We Assist You?</h2>
+        <p>Just fill in the form below to get in touch with us and we’ll get back to you right away.</p>
+      </div>
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <div class="contact-form" data-aos="fade-right">
+          <form action="https://formspree.io/f/your-form-id" method="POST" id="contactForm">
+            <div class="form-group">
+              <div class="form-field">
+                <input type="text" name="name" id="name" required>
+                <label for="name">Name*</label>
+              </div>
+              <div class="form-field">
+                <input type="text" name="surname" id="surname" required>
+                <label for="surname">Surname*</label>
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="email" name="email" id="email" required>
+              <label for="email">Email*</label>
+            </div>
+            <div class="form-field">
+              <input type="tel" name="phone" id="phone" required>
+              <label for="phone">Phone Number*</label>
+            </div>
+            <div class="form-field">
+              <input type="text" name="company" id="company" required>
+              <label for="company">Company*</label>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+        <!-- Contact Details -->
+        <div class="contact-info" data-aos="fade-left">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <h4>Our Email</h4>
+            <p><a href="mailto:Cloudsynctechnologies@gmail.com">Cloudsynctechnologies@gmail.com</a></p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Location</h4>
+            <p>
+              CLOUDSYNC TECHNOLOGIES PVT. LTD.<br>
+              Gachibowli,<br>
+              Hyderabad - 500032, Telangana, India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h3>About CloudSync</h3>
+          <p>
+            Cloud Sync Technologies specializes in SAP solutions, offering expert implementation, integration, and support services to optimize your business operations.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#partners">Our Partners</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Cloud Integration</a></li>
+            <li><a href="#services">S4 HANA Migrations</a></li>
+            <li><a href="#services">SAP Implementations & Rollouts</a></li>
+            <li><a href="#services">SAP Enhancement and Integration Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <h3>Newsletter</h3>
+          <form action="#" method="post" class="newsletter-form">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-envelope"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 CloudSync. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+
+  <!-- Swiper.js JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+  <!-- Particles.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+  
+  <!-- Custom JS -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
